@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         setContentView(R.layout.activity_main);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        // google 
+        // google
         gps = new GPSTracker(MainActivity.this);
         if (gps.canGetLocation()) {
             current_latitude = GlobalElements.NumberFormater(gps.getLatitude());
